@@ -1,5 +1,5 @@
 import { Box, Divider, makeStyles, Typography } from "@material-ui/core";
-import logo from "assets/icons/logo.png";
+import logo from "assets/icons/e-decor-logo.png";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -19,10 +19,7 @@ export default function Logo() {
   return (
     <Box display="flex" alignItems="center">
       <Link to="/" className={classes.wrapper}>
-        <img src={logo} alt="logo" width={40} />
-        <Typography variant="h6" className={classes.text} noWrap>
-          E-DECOR
-        </Typography>
+        <img src={logo} alt="logo" width={100} style={{ marginBottom: 10 }} />
       </Link>
       {window.location.pathname === "/cart" && (
         <Box ml={2} display="flex" alignItems="center">
